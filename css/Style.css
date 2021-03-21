@@ -1,0 +1,60 @@
+body{
+    background-image: url("../img/01.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(33, 20, 220);
+    text-align: center;
+    font-size: 50px;
+    text-shadow:2px 5px #dd5e5e;
+}
+ #repLink a{
+    color: rgb(82, 255, 47);
+    text-shadow:5px 3px 10px #03010f;
+    background-color: rgb(19, 156, 247);
+    text-align:center;
+    border: rgb(7, 13, 122) solid 3px;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;  
+    font-size: x-large; 
+    margin: auto 40% auto 40%;
+    box-shadow:1px 1px 10px 3px #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    font-weight:bolder ;
+    
+}
+div#repLink{
+    left: 50px;
+}
+
+header{
+    position: relative;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+h3{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(146, 0, 44);
+    text-align: center;
+    font-size: 35px;
+    text-shadow:2px 5px #dd5e5e;
+}
+header{
+    text-align: center;
+}
+div img{
+    width: 250px;
+    height: 300px;
+    margin: 10px;   
+}
+#imgs{
+    text-align: center;
+}
