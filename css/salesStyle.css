@@ -52,3 +52,14 @@ table td:first-child {
     background-color: rgba(245, 0, 74, 0.601);
     font-weight: bold;
 }
+table tr:hover:not(:first-child){
+    background-color: rgba(251, 56, 137, 0.5);
+}
+table td:hover:not(:first-child) {
+     background-color: rgb(255, 59, 59);
+    box-shadow: 2px 1px 2px  rgb(109, 2, 2) inset;
+}
+table tr:last-child th:hover{
+    background-color: #53ec5a;
+    box-shadow: 2px 1px 2px  #220ce4de inset;
+}
