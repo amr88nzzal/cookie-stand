@@ -2,7 +2,7 @@ body{
     background-image: url("../img/01.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    font-size: 150%;
+    font-size: 120%;
    
 }
 #allLocations{
@@ -81,3 +81,73 @@ button:hover{
     border-radius: 10px;
     font-weight: bold;
     text-shadow:1px 1px 1px #000000;}
+
+    form{
+        font-family: 'Berkshire Swash', cursive;
+        margin: auto;
+        width: 50%;
+        text-shadow:1px 1px 3px #00000096
+    }
+   
+    input[type=submit]{
+        background-color: rgb(67, 255, 50);
+        color: rgb(0, 26, 255);
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-shadow:1px 1px 1px #060563;
+        border-radius: 25px;
+    }
+    input[type=submit]:hover{
+        background-color: rgb(239, 250, 83);
+        color: rgb(255, 0, 0);
+        width: 160px;
+        height: 40px;
+        font-size: 17px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-shadow:1px 1px 1px #000000;
+        border-radius: 25px;}
+ input[type=text],input[type=number]{
+     border-radius: 10px;
+     height: 40px;
+     float: right;
+     display: inline;
+     width: 40%;
+     text-align: center;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ input{ display: inline;}
+ input:focus{
+outline: 0;
+ }
+ form div{
+     background-color: #af454ad5;
+     padding: 1px;
+     border-radius: 5px;
+     margin: 15px;
+     height: 60px;
+     box-shadow: 6px 6px 10px #0e0d0d;
+ }
+ form div *{
+     margin:8px 2px auto 3px;
+     height: 30px;
+ }
+ legend{
+    font-size: 25px;
+     font-weight: bold;
+     color: rgb(1, 1, 87);
+     text-shadow: 2px 5px 4px #db4a4a;
+ }
+ label{
+    float: left;
+display: inline-flex;
+color: #ffffff;
+width: 50%;
+
+     
+ }
