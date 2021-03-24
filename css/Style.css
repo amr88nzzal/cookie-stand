@@ -2,6 +2,7 @@ body{
     background-image: url("../img/01.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    
 }
 h1{
     font-family: 'Berkshire Swash', cursive;
@@ -50,14 +51,65 @@ h3{
 header{
     text-align: center;
 }
+#locations{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-radius: 10PX;
+    padding: auto 50px auto 500px ;
+font-size: 20px;
+font-weight: bold;
+text-shadow:1px 1px 1px #000000;
+}
+#locations div{
+    margin: 15px;
+    
+    border-radius: 15px;
+    display: inline-flex;
+}
+#locations div div {
+    background-color: #ffffff77;
+    width: 50%;
+    display: block;
+    box-shadow:10px 10px 7px #272727;
+}
 div img{
-    width: 210px;
-    height: 250px;
+    display: inline-flex;
+    width: 70px;
+    height: 60px;
     margin: 10px;   
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #imgs{
+    
     text-align: center;
     margin: auto;
-    width: 70%;
+    font-size: 15px;
 }
+
+
+p img{
+    width: 200px;
+    height: inherit;
+    
+}
+button{
+    background-color: rgb(107, 0, 0);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(250, 83, 139);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+p{font-size: 20px;
+    font-weight: bold;
+color:blue;}
