@@ -12,7 +12,8 @@ for (let i=6;i<20;i++){
     times.push(`${i-12}:00pm`);
   }
 }
-
+//Locations Array
+let locationsArray=[];
 //----------------------------------------//
 let totalByTime=[];
 for(let i=0;i<times.length;i++){
@@ -22,7 +23,7 @@ let TotalAllSales =0;
 
 // Function for Random Num //
 function gitRandNum(max,mini) {
-  return Math.floor(Math.random()*(max-mini+1)+mini);
+  return Math.ceil(Math.random()*(max-mini+1)+mini);
 }
 //-----------------------------------------//
 // Make constrictor for location //
@@ -32,6 +33,7 @@ function StoreLocation(locationName,maxCust,miniCust,AvgPerPerson,haveHeder) {
   this.miniCust=miniCust;
   this.AvgPerPerson=AvgPerPerson;
   this.haveHeder=haveHeder;
+  locationsArray.push(this.locationName);
   this.totalSales=this.gitSales(maxCust,miniCust,AvgPerPerson);
   this.render();
   this.calcSalesByTime();
@@ -105,6 +107,7 @@ function tblFooter(){
     tblFooter.appendChild(tblfooteD);
     tblfooteD.textContent=totalByTime[i];
   }
+  TotalAllSales=0;
   for(let i=0;i<totalByTime.length;i++){
     TotalAllSales+=totalByTime[i];
   }
@@ -120,3 +123,24 @@ const paris =new StoreLocation('Paris',38,20,2.3,false);
 const lime =new StoreLocation('Lime',16,2,4.6,false);
 
 tblFooter();
+let loadForm =document.getElementById('addLocation');
+loadForm.addEventListener('submit',addNewLocation123);
+function addNewLocation123(event){
+  event.preventDefault();
+  let locationName = event.target.locationName.value;
+  let maxCustPerHour=event.target.maxPeoplePerHour.value;
+  let miniCustPerHour=event.target.miniPeoplePerHour.value;
+  let avgCookiesPerPAX=event.target.avgCookiesPerPAX.value;
+
+  if(locationsArray.includes(locationName)){
+    alert('Wrong data input\n\nLocation Name already exist in the table');
+  }
+  else if((maxCustPerHour-miniCustPerHour)<0){alert('Wrong data input\nMax Number can\'t be smaller than Mini Number');}
+  else if (avgCookiesPerPAX <= 0){alert('Wrong data input\nAverage Number should be greater than zero');}
+  else {
+    let newLocation = new StoreLocation(locationName,maxCustPerHour,miniCustPerHour,avgCookiesPerPAX,false);
+    let table = document.getElementById('allLocations');
+    table.deleteRow(table.rows.length -2);
+    tblFooter();
+    event.target.reset();}
+}
